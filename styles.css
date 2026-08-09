@@ -188,3 +188,69 @@ footer.site {
   padding: 2px 7px;
   margin-bottom: 10px;
 }
+
+/* Mobile responsive */
+@media (max-width: 640px) {
+  .wrap { padding: 0 18px; }
+
+  header.site { padding: 28px 0 18px; }
+
+  .wordmark { font-size: 20px; }
+
+  nav.site { gap: 14px; }
+
+  nav.site a { font-size: 12px; }
+
+  main { padding: 40px 0 72px; }
+
+  h1 { font-size: 26px; }
+
+  h2.section-title { font-size: 18px; margin: 36px 0 6px; padding-top: 20px; }
+
+  p.lede { font-size: 16px; }
+
+  table.schedule,
+  table.schedule tbody,
+  table.schedule tr,
+  table.schedule td {
+    display: block;
+    width: auto;
+  }
+
+  table.schedule tr {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  table.schedule tr:last-child {
+    border-bottom: none;
+  }
+
+  table.schedule td {
+    padding: 2px 0;
+    border-bottom: none;
+  }
+
+  table.schedule td:first-child {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  table.schedule td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-soft);
+    margin-top: 8px;
+  }
+
+  table.schedule tr td[data-label]:first-child::before {
+    margin-top: 0;
+  }
+
+  table.schedule td ul {
+    margin-top: 8px;
+  }
+}

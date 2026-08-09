@@ -3,7 +3,7 @@
   --ink: #16140f;
   --ink-soft: #55524a;
   --line: #ddd8cc;
-  --accent: #a13d2c; /* placeholder accent — swap for KURTZ brand color */
+  --accent: #a13d2c; /* placeholder accent, swap for KURTZ brand color */
   --serif: Georgia, "Times New Roman", serif;
   --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   --max: 780px;
@@ -143,9 +143,31 @@ table.schedule td {
 }
 
 table.schedule td:first-child {
-  width: 190px;
+  width: 150px;
   color: var(--ink-soft);
-  white-space: nowrap;
+}
+
+table.schedule td:nth-child(2) {
+  width: 50px;
+  color: var(--ink-soft);
+}
+
+table.schedule td ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+table.schedule td ul li {
+  margin-bottom: 4px;
+}
+
+table.schedule td ul li:last-child {
+  margin-bottom: 0;
+}
+
+table.schedule td ul li.note {
+  color: var(--ink-soft);
+  font-style: italic;
 }
 
 footer.site {

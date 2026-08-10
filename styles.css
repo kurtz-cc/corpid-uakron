@@ -160,6 +160,20 @@ table.schedule.key-dates td:nth-child(2) {
   width: auto;
 }
 
+table.assignments td:first-child {
+  width: 190px;
+  color: var(--ink);
+}
+
+table.assignments td:nth-child(2) {
+  width: 60px;
+}
+
+table.assignments td:nth-child(3) {
+  width: 110px;
+}
+
+
 table.schedule td ul {
   margin: 0;
   padding-left: 18px;

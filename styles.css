@@ -1,11 +1,11 @@
 :root {
-  --bg: #faf9f6;
-  --ink: #16140f;
-  --ink-soft: #55524a;
-  --line: #ddd8cc;
-  --accent: #a13d2c; /* placeholder accent, swap for KURTZ brand color */
-  --serif: Georgia, "Times New Roman", serif;
-  --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --bg: #ffffff;
+  --ink: #000000;
+  --ink-soft: #333333;
+  --line: #cccccc;
+  --accent: #00aeef; /* C100 M0 Y0 K0, KURTZ brand cyan */
+  --serif: "mrs-eaves", Georgia, "Times New Roman", serif;
+  --sans: "avenir-lt-pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   --max: 780px;
 }
 
@@ -15,7 +15,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: var(--sans);
+  font-family: var(--serif);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
@@ -60,6 +60,7 @@ nav.site {
 }
 
 nav.site a {
+  font-family: var(--sans);
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -87,7 +88,9 @@ h1 {
 }
 
 h2.section-title {
-  font-family: var(--serif);
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   font-size: 20px;
   margin: 48px 0 6px;
   padding-top: 24px;
@@ -101,6 +104,7 @@ h2.section-title:first-of-type {
 }
 
 p.lede {
+  font-family: var(--sans);
   font-size: 17px;
   color: var(--ink-soft);
   max-width: 56ch;
@@ -123,6 +127,9 @@ p.note {
 
 .placeholder-card strong {
   display: block;
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   color: var(--ink);
   font-size: 15px;
   margin-bottom: 4px;
@@ -281,6 +288,7 @@ footer.site {
 
 .status-tag {
   display: inline-block;
+  font-family: var(--sans);
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -381,12 +389,16 @@ footer.site {
 }
 
 .file-card a strong {
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   font-size: 15px;
   font-weight: 600;
 }
 
 .file-card .drive-tag {
   display: inline-block;
+  font-family: var(--sans);
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -408,6 +420,9 @@ footer.site {
 
 .callout strong {
   display: block;
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   color: var(--ink);
   font-size: 15px;
   margin-bottom: 4px;
@@ -436,6 +451,9 @@ footer.site {
 
 .section-card strong {
   display: block;
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   color: var(--ink);
   font-size: 15px;
   margin-bottom: 4px;

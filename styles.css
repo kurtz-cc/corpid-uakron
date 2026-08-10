@@ -356,3 +356,38 @@ footer.site {
     margin-top: 8px;
   }
 }
+
+.file-card {
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 16px 18px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--ink-soft);
+  background: #fff;
+}
+
+.file-card strong {
+  display: block;
+  color: var(--ink);
+  font-size: 15px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.file-card a {
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.file-card .drive-tag {
+  display: inline-block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 1px 6px;
+  margin-left: 6px;
+}

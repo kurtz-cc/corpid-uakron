@@ -16,6 +16,7 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--serif);
+  font-size: 18px;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
@@ -57,6 +58,34 @@ header.site .wrap {
 nav.site {
   display: flex;
   gap: 22px;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 26px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.nav-toggle-label span {
+  display: block;
+  height: 2px;
+  background: var(--ink);
+}
+
+.tagline-sep {
+  display: inline;
+}
+
+.tagline-break {
+  display: none;
 }
 
 nav.site a {
@@ -111,7 +140,7 @@ p.lede {
 }
 
 p.note {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--ink-soft);
 }
 
@@ -120,7 +149,7 @@ p.note {
   border-radius: 4px;
   padding: 16px 18px;
   margin-top: 12px;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--ink-soft);
   background: #fff;
 }
@@ -140,7 +169,7 @@ table.schedule {
   width: 100%;
   border-collapse: collapse;
   margin-top: 12px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 table.schedule td {
@@ -305,19 +334,39 @@ footer.site {
 
   header.site { padding: 28px 0 18px; }
 
-  .wordmark { font-size: 20px; }
+  .wordmark { font-size: 21px; }
 
-  nav.site { gap: 14px; }
+  .tagline-sep { display: none; }
 
-  nav.site a { font-size: 12px; }
+  .tagline-break { display: block; }
+
+  .nav-toggle-label { display: flex; }
+
+  nav.site {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 14px;
+  }
+
+  .nav-toggle:checked ~ nav.site { display: flex; }
+
+  nav.site a {
+    font-size: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+  }
 
   main { padding: 40px 0 72px; }
 
-  h1 { font-size: 26px; }
+  h1 { font-size: 28px; }
 
-  h2.section-title { font-size: 18px; margin: 36px 0 6px; padding-top: 20px; }
+  h2.section-title { font-size: 19px; margin: 36px 0 6px; padding-top: 20px; }
 
-  p.lede { font-size: 16px; }
+  p.lede { font-size: 17px; }
+
+  .gantt-wrap { display: none; }
 
   table.schedule,
   table.schedule tbody,
@@ -370,7 +419,7 @@ footer.site {
   border-radius: 4px;
   padding: 14px 18px;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--ink-soft);
   background: #fff;
   display: flex;
@@ -415,7 +464,7 @@ footer.site {
   padding: 16px 18px;
   margin: 20px 0 32px;
   background: #fff;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .callout strong {
@@ -444,7 +493,7 @@ footer.site {
   border-radius: 4px;
   padding: 16px 18px;
   margin-top: 12px;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--ink-soft);
   background: #fff;
 }

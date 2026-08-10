@@ -360,24 +360,29 @@ footer.site {
 .file-card {
   border: 1px solid var(--line);
   border-radius: 4px;
-  padding: 16px 18px;
-  margin-top: 12px;
+  padding: 14px 18px;
+  margin-top: 10px;
   font-size: 14px;
   color: var(--ink-soft);
   background: #fff;
-}
-
-.file-card strong {
-  display: block;
-  color: var(--ink);
-  font-size: 15px;
-  margin-bottom: 4px;
-  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .file-card a {
-  display: inline-block;
-  margin-top: 6px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.file-card a:hover {
+  text-decoration: underline;
+}
+
+.file-card a strong {
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .file-card .drive-tag {
@@ -389,5 +394,5 @@ footer.site {
   border: 1px solid var(--line);
   border-radius: 3px;
   padding: 1px 6px;
-  margin-left: 6px;
+  white-space: nowrap;
 }

@@ -173,6 +173,86 @@ table.assignments td:nth-child(3) {
   width: 110px;
 }
 
+.gantt-wrap {
+  overflow-x: auto;
+  margin-top: 14px;
+}
+
+.gantt {
+  min-width: 640px;
+}
+
+.gantt-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  padding: 9px 0;
+}
+
+.gantt-row:last-child {
+  border-bottom: none;
+}
+
+.gantt-header {
+  padding-bottom: 6px;
+}
+
+.gantt-label {
+  width: 190px;
+  flex: 0 0 190px;
+  font-size: 13px;
+  color: var(--ink);
+  padding-right: 14px;
+  position: sticky;
+  left: 0;
+  background: var(--bg);
+}
+
+.gantt-meta {
+  display: block;
+  font-size: 11px;
+  color: var(--ink-soft);
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+.gantt-track {
+  position: relative;
+  flex: 1;
+  height: 20px;
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--line) 0,
+    var(--line) 1px,
+    transparent 1px,
+    transparent 6.25%
+  );
+}
+
+.gantt-bar {
+  position: absolute;
+  top: 2px;
+  height: 16px;
+  background: var(--accent);
+  border-radius: 3px;
+}
+
+.gantt-header .gantt-track {
+  height: 16px;
+  background: none;
+}
+
+.gantt-ruler {
+  position: relative;
+}
+
+.gantt-ruler span {
+  position: absolute;
+  font-size: 10px;
+  color: var(--ink-soft);
+  transform: translateX(-2px);
+}
+
 
 table.schedule td ul {
   margin: 0;

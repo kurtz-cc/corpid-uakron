@@ -209,6 +209,16 @@ table.assignments td:nth-child(3) {
   width: 110px;
 }
 
+table.assignments td:first-child a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+}
+
+table.assignments td:first-child a:hover {
+  color: var(--accent);
+}
+
 .gantt-wrap {
   overflow-x: auto;
   margin-top: 14px;
@@ -478,6 +488,10 @@ footer.site {
   font-weight: 600;
 }
 
+.callout strong:only-child {
+  margin-bottom: 0;
+}
+
 .callout a {
   color: var(--accent);
   font-weight: 600;
@@ -509,8 +523,8 @@ footer.site {
   font-weight: 600;
 }
 
-.section-card .card-link {
-  display: inline-block;
+.card-link {
+  display: block;
   margin-top: 8px;
   font-size: 13px;
   color: var(--accent);
@@ -518,6 +532,73 @@ footer.site {
   font-weight: 600;
 }
 
-.section-card .card-link:hover {
+.card-link:hover {
   text-decoration: underline;
+}
+
+.back-link {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+
+.back-link:hover {
+  color: var(--ink);
+  text-decoration: underline;
+}
+
+.due-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.due-badges .status-tag {
+  margin-bottom: 0;
+}
+
+.spec-list {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  font-size: 17px;
+}
+
+.spec-list li {
+  margin-bottom: 14px;
+}
+
+.spec-list li:last-child {
+  margin-bottom: 0;
+}
+
+.spec-list .spec-label {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.example-figure {
+  margin: 24px 0 0;
+}
+
+.example-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.example-caption {
+  font-family: var(--sans);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  margin-bottom: 8px;
 }

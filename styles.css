@@ -132,6 +132,15 @@ h2.section-title:first-of-type {
   border-top: none;
 }
 
+p.kicker {
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin: 0 0 16px;
+}
+
 p.lede {
   font-family: var(--sans);
   font-size: 17px;
@@ -203,10 +212,6 @@ table.assignments td:first-child {
 
 table.assignments td:nth-child(2) {
   width: 60px;
-}
-
-table.assignments td:nth-child(3) {
-  width: 110px;
 }
 
 table.assignments td:first-child a {

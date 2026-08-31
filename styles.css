@@ -343,6 +343,16 @@ footer.site {
   margin-bottom: 10px;
 }
 
+.status-tag.done {
+  color: var(--ink-soft);
+  border-color: var(--line);
+}
+
+tr.row-done ul {
+  text-decoration: line-through;
+  color: var(--ink-soft);
+}
+
 /* Mobile responsive */
 @media (max-width: 640px) {
   .wrap { padding: 0 18px; }

@@ -305,6 +305,26 @@ table.assignments td:first-child a:hover {
 }
 
 
+/* Suggested pace chart (Brand Guide + Applications page). Week columns, black work bars, hard dates in cyan. */
+.pace { position: relative; min-width: 640px; }
+.pace .gantt-row { position: relative; z-index: 1; }
+.pace .gantt-track {
+  background-image: repeating-linear-gradient(to right, var(--line) 0, var(--line) 1px, transparent 1px, transparent 14.2857%);
+}
+.pace .gantt-header .gantt-track { background: none; height: 30px; }
+.pace .gantt-ruler span { font-family: var(--sans); font-size: 11px; color: var(--ink); letter-spacing: 0.04em; }
+.pace .gantt-ruler span small { display: block; font-size: 9px; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.06em; }
+.pace .gantt-bar { background: var(--ink); border-radius: 2px; }
+.pace .gantt-bar.light { background: var(--line); }
+.pace-layer { position: absolute; top: 0; bottom: 0; left: 190px; right: 0; pointer-events: none; }
+.pace-shade { position: absolute; top: 0; bottom: 0; background: #f2f2f2; z-index: 0; }
+.pace-layer.lines { z-index: 2; }
+.pace-line { position: absolute; top: 34px; bottom: 0; width: 2px; margin-left: -1px; background: var(--accent); }
+.pace-due { position: absolute; top: 3px; width: 12px; height: 12px; margin-left: -6px; background: var(--accent); transform: rotate(45deg); }
+.pace-key { font-family: var(--sans); font-size: 12px; color: var(--ink-soft); margin-top: 10px; }
+.pace-key strong { color: var(--accent); font-weight: 400; }
+
+
 table.schedule td ul {
   margin: 0;
   padding-left: 18px;
@@ -392,6 +412,7 @@ tr.row-done ul {
   p.lede { font-size: 17px; }
 
   .gantt-wrap { display: none; }
+  .gantt-wrap.pace-wrap { display: block; }
 
   table.schedule,
   table.schedule tbody,
